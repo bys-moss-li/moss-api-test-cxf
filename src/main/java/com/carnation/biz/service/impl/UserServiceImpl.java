@@ -1,10 +1,11 @@
-package com.accela.biz.service.impl;
+package com.carnation.biz.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.accela.biz.model.User;
-import com.accela.biz.service.UserService;
+import com.carnation.biz.model.User;
+import com.carnation.biz.service.UserService;
+
 
 public class UserServiceImpl implements UserService
 {

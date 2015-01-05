@@ -1,4 +1,4 @@
-package com.accela.restapis.framewortk.jaxrs.interceptors;
+package com.carnation.restapis.framewortk.jaxrs.interceptors;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,8 @@ import org.apache.cxf.phase.AbstractPhaseInterceptor;
 import org.apache.cxf.phase.Phase;
 import org.apache.cxf.service.Service;
 
-import com.accela.restapis.framewortk.model.RestThreadLocal;
+import com.carnation.restapis.framewortk.model.RestThreadLocal;
+
 
 public class JAXRSInInterceptor extends AbstractPhaseInterceptor<org.apache.cxf.message.Message>
 {

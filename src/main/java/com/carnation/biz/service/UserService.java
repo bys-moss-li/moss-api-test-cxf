@@ -1,8 +1,9 @@
-package com.accela.biz.service;
+package com.carnation.biz.service;
 
 import java.util.List;
 
-import com.accela.biz.model.User;
+import com.carnation.biz.model.User;
+
 
 public interface UserService
 {

@@ -17,15 +17,15 @@
 
     <jaxrs:server id="rest-apis" address="/">
 		<jaxrs:inInterceptors>
-			<bean class="com.accela.restapis.framewortk.jaxrs.interceptors.JAXRSInInterceptor"/>
+			<bean class="com.carnation.restapis.framewortk.jaxrs.interceptors.JAXRSInInterceptor"/>
 		</jaxrs:inInterceptors>
         <jaxrs:serviceBeans>
-        	<bean id="UserResource_V4" class="com.accela.restapis.resources.UserResourceV4"></bean>
+        	<bean id="UserResource_V4" class="com.carnation.restapis.resources.UserResourceV4"></bean>
         
         </jaxrs:serviceBeans>
         
         <jaxrs:providers>
-			<bean id="JSONProvider" class="com.accela.restapis.framewortk.jaxrs.providers.JSONProvider"></bean>
+			<bean id="JSONProvider" class="com.carnation.restapis.framewortk.jaxrs.providers.JSONProvider"></bean>
 		</jaxrs:providers>
 		
     </jaxrs:server>

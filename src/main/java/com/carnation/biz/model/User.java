@@ -1,4 +1,4 @@
-package com.accela.biz.model;
+package com.carnation.biz.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonView;

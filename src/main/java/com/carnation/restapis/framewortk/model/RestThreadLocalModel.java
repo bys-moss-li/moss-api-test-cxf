@@ -1,4 +1,4 @@
-package com.accela.restapis.framewortk.model;
+package com.carnation.restapis.framewortk.model;
 
 import java.io.Serializable;
 import java.util.Map;

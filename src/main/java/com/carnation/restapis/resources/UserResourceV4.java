@@ -1,12 +1,13 @@
-package com.accela.restapis.resources;
+package com.carnation.restapis.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-import com.accela.biz.model.User;
-import com.accela.biz.service.impl.UserServiceImpl;
+import com.carnation.biz.model.User;
+import com.carnation.biz.service.impl.UserServiceImpl;
+
 
 
 @Path("/v4/users")

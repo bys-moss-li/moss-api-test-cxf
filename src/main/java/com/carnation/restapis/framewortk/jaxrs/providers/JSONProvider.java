@@ -1,4 +1,4 @@
-package com.accela.restapis.framewortk.jaxrs.providers;
+package com.carnation.restapis.framewortk.jaxrs.providers;
 
 import java.io.IOException;
 import java.io.InputStream;
