@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+<!--     <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml"/> -->
+
+    <context:component-scan base-package="com.ryan.test.service"/>
+
+    <jaxrs:server id="rest-apis" address="/">
+		<jaxrs:inInterceptors>
+			<bean class="com.accela.restapis.framewortk.jaxrs.interceptors.JAXRSInInterceptor"/>
+		</jaxrs:inInterceptors>
+        <jaxrs:serviceBeans>
+        	<bean id="UserResource_V4" class="com.accela.restapis.resources.UserResourceV4"></bean>
+        
+        </jaxrs:serviceBeans>
+        
+        <jaxrs:providers>
+			<bean id="JSONProvider" class="com.accela.restapis.framewortk.jaxrs.providers.JSONProvider"></bean>
+		</jaxrs:providers>
+		
+    </jaxrs:server>
+</beans>
